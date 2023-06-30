@@ -180,6 +180,7 @@ h3 span {
     background-color: hsl(165, 53%, 46%);
     padding: 0.3rem;
     font-weight: 700;
+    border-color: transparent;
 }
 
 #tip-amount, #total-people {
