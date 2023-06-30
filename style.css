@@ -1,0 +1,202 @@
+/* font-family: 'Space Mono', monospace; */
+
+/* input color - hsl(189, 41%, 97%)*/
+
+html{
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+}
+
+/* universal */
+
+h3{
+    font-size: 0.6rem;
+    margin: 0;
+}
+
+/* container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    width: auto;
+}
+
+@media only screen and (max-width: 680px){
+    .container{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+}
+
+.right{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 15px;
+    height: 70%;
+    width: 50%;
+}
+
+
+
+.left{
+    height: 70%;
+    margin-right: 30px;
+    width: 50%;
+}
+
+@media only screen and (max-width : 680px){
+    .right {
+        height: auto;
+        width: 80%;
+    }
+
+    .left{
+        width: 80%;
+    }
+}
+
+.total-container{
+    margin-bottom: 15px;
+}
+
+#total-cost, #num-of-people{
+    width: 100%;
+    background-color: hsl(189, 41%, 97%);
+    border: 2px solid transparent;
+    height: 1.2rem;
+    color: hsl(183, 100%, 15%) ;
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-align: right;
+    padding: 10px
+}
+
+#total-cost:focus, #num-of-people:focus, #custom:focus{
+    outline: none;
+    border: 2px hsl(184, 14%, 56%) solid;
+}
+
+
+p {
+    font-size: 0.6rem;
+    display: inline-block;
+    width: 30%;
+    color: #fff;
+}
+
+span{
+    color :hsl(184, 14%, 56%);
+    font-size: 0.4rem;
+    letter-spacing: 0.1rem;
+    text-align: left;
+}
+
+h3 span {
+    text-align: right;
+    color: red;
+    width: 40%;
+    display: none;
+    margin-left: auto;
+    position: relative;
+    right: -50px;
+}
+
+/* buttons */
+
+.button-container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:  repeat(3,1fr);
+    gap: 5px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+@media only screen and (max-width: 680px) {
+    .button-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.left button{
+    background-color: hsl(183, 100%, 15%);
+    border-color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.2s ease all;
+    width: 4rem;
+    font-size: 0.9rem;
+}
+
+#custom{
+    background-color: hsl(189, 41%, 97%);
+    border: 1px transparent solid;
+    letter-spacing: 1px;
+    padding: 0px;
+    margin: 0;
+    font-weight: 700;
+    border-radius: 5px;
+    width: 4rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: hsl(183, 100%, 15%) ;
+}
+
+@media only screen and (max-width : 680px){
+    #custom, .left button {
+        width: 100%
+    }
+}
+
+
+.left button:hover {
+    background-color: hsl(165, 53%, 46%);
+    color: hsl(186, 90%, 16%);
+}
+
+#reset{
+    width: 80%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    background-color: hsl(165, 53%, 46%);
+    padding: 0.3rem;
+    font-weight: 700;
+}
+
+#tip-amount, #total-people {
+    display: inline-block;
+    vertical-align:super;
+    color: hsl(165, 53%, 46%);
+    position: relative;
+    left: 50px;
+}
+
+.input-container{
+    position: relative;
+}
+
+.icon{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
